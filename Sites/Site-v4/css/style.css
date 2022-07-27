@@ -1,0 +1,290 @@
+/*
+GERAL
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+        font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+        color: #4d4d4d;
+        background-image: url('https://cdn.mwallpapers.com/photos/wallpapers/travel-world/night-city-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-lgdte.jpg');
+        background-position: center center;
+        background-repeat: repeat;
+    }
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.botao {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #8f2faf;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+/*
+NAVEGAÇÃO
+*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav img {
+    width: 90px;
+    margin-bottom: 0px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: Pacifico, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+/*
+HEADER
+*/
+
+div {
+    justify-content: center;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+div h1 {
+    font-size: 30px;
+    margin-left: 14px;
+    margin-top: 100px;
+}
+div p {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 24px;
+    margin-bottom: 2em;
+}
+
+div a {
+    margin-left: 0px;
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (min-width: 1100px) {
+    /*
+    NAVEGAÇÃO
+    */
+
+    body {
+        font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+        color: #4d4d4d;
+        background-image: url('https://cdn.mwallpapers.com/photos/wallpapers/travel-world/night-city-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-lgdte.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .wrapper {
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 130%;
+        max-width: 230px;
+        min-height: 803px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    nav img {
+        width: 90px;
+        margin-bottom: 0px;
+    }
+
+    nav a {
+        margin-bottom: 30px;
+    }
+
+    nav ul a {
+        margin-bottom: 0px;
+        border: 2px solid rgba(0, 0, 0, 0);
+    }
+    nav ul a:focus {
+        background-color: #8f2faf;
+        border: 2px solid black;
+    }
+
+    .contato_icons {
+        display: flex;
+        gap: 10px;
+        margin-top: 120%;
+        width: 70%;
+    }
+
+    .contato_icons img {
+        width: 60px;
+    }
+
+    .icons_button {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    div {
+        justify-content: center;
+        color: #f1f1f1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: auto;
+        max-width: 2030px;
+        min-width: 1024px;
+    }
+    
+    div h1 {
+        font-size: 40px;
+        margin-left: 40px;
+        margin-top: -889px;
+    }
+    div p {
+        font-size: 30px;
+        margin-top: 0px;
+        margin-left: 60px;
+        margin-bottom: 2em;
+    }
+    
+    div a {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    /*
+    NAVEGAÇÃO
+    */
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    nav img {
+        width: 180px;
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+
+    nav > a {
+        text-decoration: none;
+        color: #f1f1f1;
+        font-weight: 700;
+        font-size: 60px;
+        font-family: Pacifico, serif;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        padding: 10px 0;
+        width: 100%;
+        text-decoration: none;
+        color: #f1f1f1;
+        font-size: 40px;
+    }
+
+    /*
+    HEADER
+    */
+
+    div {
+        justify-content: center;
+        color: #f1f1f1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    div h1 {
+        font-size: 100px;
+        margin-left: 14px;
+        margin-top: 100px;
+    }
+    div p {
+        font-size: 60px;
+        margin-top: 0px;
+        margin-left: 24px;
+        margin-bottom: 50px;
+    }
+
+    div a {
+        margin-left: 0px;
+    }
+}

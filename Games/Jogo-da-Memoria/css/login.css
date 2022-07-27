@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('https://images.hdqwalls.com/download/rick-and-morty-netflix-2020-9d-3840x2400.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.login_header img {
+    width: 600px;
+}
+
+.login_header h1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+.login_input {
+    border: 2px solid #333;
+    border-radius: 4px;
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 15px;
+    max-width: 400px;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
+
+.login_button {
+    background-color: #ee665e;
+    background-image: url('https://i.pinimg.com/originals/fc/e3/d1/fce3d14b6a87e0f8212bf300dfb4d77f.gif');
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 15px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login_button:disabled {
+    background-color: rgba(181, 181, 181, 0.8);
+    background-image: url('https://media4.giphy.com/media/WPtWaxuzyf5awJYb3m/giphy.gif?cid=790b76114e1de9b0fc0fda8291072efb58a28321daec8f46&rid=giphy.gif&ct=s');
+    color: rgb(123, 123, 123);
+    cursor: auto;
+}
